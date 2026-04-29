@@ -1,10 +1,14 @@
-body { background: #000; color: #0f0; font-family: 'Courier New', monospace; }
-.header { text-align: center; border-bottom: 2px solid #0f0; padding: 20px; }
-.btn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px; }
-button { padding: 15px; border: 1px solid #0f0; cursor: pointer; font-weight: bold; }
-.btn-nmap { color: #00ffff; border-color: #00ffff; }
-.btn-whois { color: #ffff00; border-color: #ffff00; }
-.btn-brute { color: #ff00ff; border-color: #ff00ff; }
-.btn-sql { color: #ff4500; border-color: #ff4500; }
-.btn-full { color: #ff0000; border-color: #ff0000; background: #220000; }
-.terminal { background: #050505; height: 350px; margin: 20px; padding: 15px; border: 2px solid #0f0; overflow-y: scroll; color: #0f0; }
+body { background: #000; color: #0f0; font-family: 'Courier New', monospace; margin: 0; padding: 10px; }
+
+/* Matrix Background Effect */
+canvas { position: fixed; top: 0; left: 0; z-index: -1; }
+
+.header { text-align: center; border-bottom: 2px solid #0f0; margin-bottom: 15px; }
+
+.input-area input { width: 95% !important; border: 2px solid #0f0; font-size: 16px; }
+
+.btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+
+button { padding: 20px; font-weight: bold; border: 2px solid; cursor: pointer; text-transform: uppercase; }
+
+.terminal { background: rgba(0, 20, 0, 0.9); height: 250px; margin-top: 20px; padding: 15px; border: 2px solid #0f0; overflow-y: scroll; font-size: 14px; }
